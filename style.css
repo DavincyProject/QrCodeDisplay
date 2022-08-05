@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+body {
+    background: hsl(212, 45%, 89%)
+}
+
+.center-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background : hsl(0, 0%, 100%);
+    width: 28%;
+    height: 70%;
+    border: none;
+    border-radius: 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.qr-code img{
+    width: 300px;
+    height: 300px;
+    border: none;
+    border-radius: 20px;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title h1{
+    font-family: 'Outfit', sans-serif;
+    color: hsl(218, 44%, 22%);
+    text-align: center;
+    font-size: 23px;
+    width: 70%
+}
+
+.title p{
+    font-family: 'Outfit', sans-serif;
+    color: hsl(220, 15%, 55%);
+    font-szie: 15px;
+    text-align: center;
+    width: 60%
+}
+
+.attribution {
+    font-size: 11px; 
+    text-align: center;
+    font-family: 'Outfit', sans-serif;
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+
+@media screen and (min-width: 375px){
+    .box {
+        width: 90%;
+        height : 80%;
+    }
+
+    .qr-code img{
+        width: 270px;
+        height: 270px;
+        margin: 10px;
+    }
+}
+
+@media screen and (min-width: 1440px){
+    .box {
+        width: 28%;
+        height: 70%;
+    }
+
+    .qr-code img{
+        width: 300px;
+        height: 300px;
+    }
+}
